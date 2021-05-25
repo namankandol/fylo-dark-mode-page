@@ -1,0 +1,364 @@
+body {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background-color: hsl(218, 28%, 13%);
+}
+
+a,a:hover{
+    color: #fff;
+}
+
+/* headings */
+
+.section-heading {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    padding-bottom: 1.5rem;     
+}
+
+@media (max-width:400px){
+    .section-heading{
+        font-size: 1.8rem;
+        padding-bottom: 1rem;
+    }
+}
+
+/* navigation bar */
+.navbar {
+    background-color: hsl(217, 28%, 15%);
+    padding: 3rem 4rem;
+}
+
+.nav-item{
+    margin-right: 1rem;
+    margin-left: 1rem; 
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:400px){
+    .navbar{
+        padding: 1rem 2rem 2rem 0 ;
+        flex-wrap: nowrap;
+        font-size: 0.8rem
+    }
+    .navbar-nav{
+        flex-direction:inherit ;
+    }
+    .nav-item{
+        margin: 0.2rem;
+    }
+    .navbar-brand{
+        scale: 0.5;
+    }
+}
+
+
+/* intro section  */
+#intro {
+    background-color: hsl(217, 28%, 15%);
+    padding: 2.5rem 20%;
+    background-image: url('images/bg-curvy-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.intro-text {
+    font-size: 1.1rem;
+    padding: 0 18% 1rem;
+}
+
+.gradient-btn {
+    border: none;
+    padding: 0.9rem 5rem;
+    border-radius: 100px;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    margin-bottom: 7rem;
+}
+
+.gradient-btn:active {
+    background: hsl(176, 68%, 64%);
+}
+
+@media (max-width:400px){
+    #intro{
+        background-image: url('images/bg-curvy-mobile.svg');
+        padding: 0rem 2rem 0;
+    }
+    .intro-image{
+        width: 100%;
+        padding-bottom: 3rem;
+    }
+    .intro-text{
+        font-size: 0.9rem;
+        padding: 0 0 1rem ;
+    }
+}
+
+/* features section */
+
+#features {
+    font-size: 0.9rem;
+}
+
+#features h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding-top: 2rem;
+}
+
+#features .row {
+    margin-inline: 10rem;
+}
+.column-features {
+    padding: 2rem 5rem;
+}
+
+@media (max-width:400px){
+    #features .row{
+        margin: 0;
+    }
+    .column-features{
+        padding: 1rem 1.6rem 4rem;
+    }
+}
+
+/* middle section  */
+#middle {
+    padding: 7rem 6rem 6rem;
+}
+
+.column-middle {
+    text-align: left;
+    padding: 3rem;
+}
+
+.column-middle h1 {
+    padding-right: 4rem;
+    padding-bottom: 0.7rem;
+    margin-top: 3rem;
+}
+
+.arrow-link {
+    color: hsl(176, 68%, 64%);
+    text-decoration: underline;
+}
+
+@media (max-width:400px){
+    #middle{
+        padding: 4rem 2rem 8rem;
+        font-size: 0.9rem;
+    }.column-middle{
+        padding: 0.5rem;
+    }
+    .column-middle h1{
+        padding: 0 0 1rem;
+        font-size: 1.22rem;
+    }
+    .productive{
+        width: 100%;
+    }
+}
+
+
+/* testimonials section */
+#testimonials {
+    padding: 0 8rem 5rem;
+    text-align: left;
+}
+.cards {
+    padding: 1rem;
+    
+}
+.profile-card {
+    background-color: hsl(219, 30%, 18%);
+    padding: 3rem 2rem 1rem 2rem;
+    box-shadow: 0 0 20px -15px #000;
+    border-radius: 10px;
+}
+.profile {
+    font-size: 0.65rem;
+}
+.profile img {
+    width: 2rem;
+    border-radius: 100%;
+    float: left;
+    padding-top: 0.2rem;
+}
+
+.profile p {
+    margin-left: 3rem;
+}
+
+.profile-span {
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+@media (max-width:400px){
+    #testimonials{
+        padding: 2rem 2rem 4rem;
+        font-size:0.9rem;
+    }
+    .profile{
+        font-size: 0.65rem;
+    }
+    .profile-span {
+        font-size: 0.75rem;
+    }
+}
+
+
+/* call to action section  */
+
+.floating {
+    width: 59%;
+    margin: auto;
+    background-color: hsl(217, 28%, 15%);
+    padding: 2rem 5rem 2.5rem;
+    border-radius: 10px;
+    position: relative;
+    top: 7rem;
+    box-shadow: 0 0 20px -10px #000;
+}
+
+.floating h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+}
+.cta-flex{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.floating .gradient-btn {
+    margin-bottom: 0;
+    margin-top: 1rem;
+    padding: 0.9rem 3.5rem;
+}
+.email{
+    padding: 1.654rem 1.2rem;
+    width: 50%;
+    border-radius: 100px;
+    border: none;
+    font-size: 12px;
+    margin-top: 1rem;
+}
+
+
+@media (max-width:400px){
+    .floating{
+        width: 86%;
+        padding: 2rem 1.5rem ;
+        font-size: 0.9rem;
+    }
+    .floating h2{
+        font-size: 1.4rem;
+    }
+    .cta-flex{
+        display: block;
+    }
+    .email{
+        width: 100%;
+        padding: 1rem 1.2rem;
+    }
+    .floating .gradient-btn{
+        width: 100%;
+    }
+}
+   
+/* footer section  */
+
+
+.footer {
+    background-color: hsl(216, 53%, 9%);
+    padding: 12rem 3rem 3rem 6rem;
+    text-align: left;
+}
+
+.cyan p {
+    color: white;
+}
+
+.cyanflex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clm1 {
+    width: 27%;
+}
+
+.logo2 {
+    padding-bottom: 2.5rem;
+}
+
+.clm1 p {
+    padding-bottom: 1.2rem;
+    font-size: 0.9rem;
+}
+
+.location {
+    padding-right: 1.3rem;
+    height: 1.3rem;
+}
+
+.phone {
+    padding-right: 1.3rem;
+    height: 1.3rem;
+}
+
+.email-footer {
+    padding-right: 1.3rem;
+    height: 1.3rem;
+}
+.contact{
+    display: flex;
+}
+.clm2 a {
+    display: block;
+    padding-bottom: 1.5rem;
+}
+
+
+.clm3 a {
+    display: block;
+    padding-bottom: 1.5rem;
+}
+
+.sociallinks {
+    padding: 0.3rem;
+}
+
+@media (max-width:400px){
+    .footer{
+        padding: 12rem 1rem 0;
+    }
+    .cyanflex{
+        display: block;
+    }
+    .clm1{
+        width: 100%;
+    }
+    .clm1 p {
+        padding-bottom: 0rem;
+        font-size: 0.9rem;
+    }
+    .clm2{
+        padding: 3rem 0;
+    }
+    .clm3{
+        padding-bottom: 3rem;
+    }
+    .clm4{
+        text-align: center;
+        padding-bottom: 2.5rem;
+    }
+}
